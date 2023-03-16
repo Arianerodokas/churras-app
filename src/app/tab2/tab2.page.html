@@ -8,16 +8,16 @@
 
 <ion-content [fullscreen]="true" color="dark">
   <h2>Valendo:
-    <ion-button color="light">1</ion-button>
+    <ion-button color="light">{{valendo}}</ion-button>
   </h2>
 
 
 <div class="botao">
-<ion-button shape="round" color="light">1</ion-button>
-<ion-button shape="round" color="light">3</ion-button>
-<ion-button shape="round" color="light" >6</ion-button>
-<ion-button shape="round" color="light">9</ion-button>
-<ion-button shape="round" color="light">12</ion-button>
+<ion-button shape="round" color="light" (click)="mudarNumero(1)">1</ion-button>
+<ion-button shape="round" color="light" (click)="mudarNumero(3)">3</ion-button>
+<ion-button shape="round" color="light" (click)="mudarNumero(6)">6</ion-button>
+<ion-button shape="round" color="light" (click)="mudarNumero(9)">9</ion-button>
+<ion-button shape="round" color="light" (click)="mudarNumero(12)">12</ion-button>
   </div>
 
 
@@ -27,18 +27,18 @@
     <ion-col>
       <div class="time">
         <h1 class="ion-text-center">Time 1</h1>
-      <ion-button class="botao-add" color="light">+</ion-button>
-      <ion-button class="botao-resu" color="light">0</ion-button>
-      <ion-button class="botao-add" color="light">-</ion-button>
+      <ion-button class="botao-add" color="light" (click)="addbotao1()">+</ion-button>
+      <ion-button class="botao-resu" color="light">{{time1}}</ion-button>
+      <ion-button class="botao-add" color="light" (click)="subbotao1()">-</ion-button>
     </div>
     </ion-col>
 
     <ion-col>
       <div class="time">
       <h1 class="ion-text-center">Time 2</h1>
-      <ion-button class="botao-add" color="light">+</ion-button>
-      <ion-button class="botao-resu" color="light">0</ion-button>
-      <ion-button class="botao-add" color="light">-</ion-button>
+      <ion-button class="botao-add" color="light" (click)="addbotao2()">+</ion-button>
+      <ion-button class="botao-resu" color="light">{{time2}}</ion-button>
+      <ion-button class="botao-add" color="light" (click)="subbotao2()">-</ion-button>
     </div>
     </ion-col>
   </ion-row>
@@ -52,16 +52,16 @@
 
  <ion-row>
    <ion-col><ion-label>TIME 1:</ion-label></ion-col>
-   <ion-col><ion-label>0</ion-label></ion-col>
+   <ion-col><ion-label>{{ftime1}}</ion-label></ion-col>
  </ion-row>
 
  <ion-row>
    <ion-col><ion-label>TIME 2:</ion-label></ion-col>
-   <ion-col><ion-label>0</ion-label></ion-col>
+   <ion-col><ion-label>{{ftime2}}</ion-label></ion-col>
 </ion-row>
 
 <ion-row class="text-center">
-<ion-button expand="block" color="fundo" class="limpar">Limpar</ion-button>
+<ion-button expand="block" color="fundo" class="limpar" (click)="limpar()">Limpar</ion-button>
 </ion-row>
  </ion-card-content>
 
