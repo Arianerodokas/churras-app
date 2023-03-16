@@ -1,17 +1,37 @@
 
-.h2{
-  text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ion-title{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-align: center;
+font-size: 30px;
+
 }
+h2{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: rgb(126, 186, 181);
+text-align: center;
+}
+.botao{
 
-.topo{
-
-margin-bottom: 60%;
-margin-left: 10%;
+margin-bottom: 5%;
+margin-left: 20%;
 margin-right: 20%;
+background-color: rgb(126, 186, 181);
 }
-ion-buttom{
-background-color: #5F9EA0;
+ion-button{
+opacity: 50%;
+  height: 20px;
+  width: 19%;
+}
+.time1{
+text-align: center;
+background-color: rgb(126, 186, 181);
+}
+.time2{
+  text-align: center;
+  background-color: rgb(126, 186, 181);
+}
 
-
+.botao2{
+size: 30cm;
+color: aqua;
 }
