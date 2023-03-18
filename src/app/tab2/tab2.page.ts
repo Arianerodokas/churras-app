@@ -38,4 +38,33 @@ ftime2 = 0;
     this.valendo
 
   }
+
+  addbotao2(){
+
+    this.time2 += this.valendo
+    this.valendo = 1
+    if(this.time2 >= 12) {
+    this.ftime2 += 1
+    this.time1 = 0
+    this.time2 = 0
+
+    }
+  }
+
+  subbotao2() {
+
+    this.time2 -= this.valendo
+    this.valendo
+
+  }
+
+  limpar(){
+    this.valendo = 1
+    this.time1 = 0
+    this.time2 = 0
+    this.ftime1 = 0
+    this.ftime2 = 0
+
+
+  }
 }
